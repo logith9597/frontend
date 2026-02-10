@@ -9,11 +9,11 @@
         }
 
         .form-box {
-            width: 500px;
+            width: 400px;
             margin: 200px auto;
             background: white;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: 2px solid #ccc;
         }
 
         h2 {
@@ -27,7 +27,7 @@
 
         input, button {
             width: 100%;
-            padding: 8px;
+            padding: 4px;
             margin: 8px 0;
         }
 
@@ -44,16 +44,20 @@
         <h2>Employee Registration</h2>
 
         <form>
-		<label> Employee Name</label><br>
+		<label>  Name</label><br>
             <input type="text" placeholder="Name">
-			<label>  Employee Email</label><br>
+			<label>  Email</label><br>
             <input type="email" placeholder="Email">
-			<label> Employee Department</label><br>
-            <input type="text" placeholder="Department">
-			<label> Employee Password</label><br>
+			<label> Department</label><br>
+			<select name ="Department" required>
+			<option value= select department</option><br><br>
+			<option> Testing </option>
+			<option> Webdeveloper</option><br><br>
+</select><br><br>							
+			<label>  Password </label><br>
             <input type="password" placeholder="Password">
-			<label> Employee salary</label><br>
-			<input type="number" placeholder="salary">
+			<label> confirm password</label><br><br>
+			<input type="number" placeholder="confirm password">
             <button type="submit">Register</button>
         </form>
     </div>
