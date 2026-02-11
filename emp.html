@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Employee Registration</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name</label>
+        <input type="text" id="name">
+        <div id="nameError" class="error"></div>
+
+        <label>Email</label>
+        <input type="text" id="email">
+        <div id="emailError" class="error"></div>
+
+        <label>Department</label>
+        <select id="department">
+            <option value="">Select Department</option>
+            <option>Testing</option>
+            <option>Web Developer</option>
+        </select>
+        <div id="departmentError" class="error"></div>
+
+        <label>Password</label>
+        <input type="password" id="password">
+        <div id="passwordError" class="error"></div>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirmPassword">
+        <div id="confirmPasswordError" class="error"></div>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
